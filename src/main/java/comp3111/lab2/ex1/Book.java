@@ -23,7 +23,7 @@ public class Book {
 	public String getChapters(int i) {
 		/* return the chapter by the given index */
 		/* ADD YOUR CODE HERE */
-		if(chapters[i] == "n/a")
+		if(chapters[i] == "n/a" || (i > chapters.length))
 			return "n/a";
 		else
 			return chapters[i];
